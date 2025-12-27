@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Belajar Ceria</title>
-    @vite('resources/css/app.css')
-</head>
-
-<body class="bg-gradient-to-br from-sky-100 to-yellow-100 min-h-screen flex flex-col">
 
 {{-- NAVIGASI --}}
 @include('layouts.navbar')
@@ -77,5 +68,3 @@
     }
 </style>
 
-</body>
-</html>
