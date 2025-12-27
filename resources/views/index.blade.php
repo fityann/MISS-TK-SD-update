@@ -1,95 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Ceria</title>
+    @vite('resources/css/app.css')
+</head>
+
+<body class="bg-gradient-to-br from-sky-100 to-yellow-100 min-h-screen flex flex-col">
+
 {{-- NAVIGASI --}}
 @include('layouts.navbar')
 
-{{-- Konten utama --}}
-<div class="relative z-10 pt-10 pb-10 px-4 flex-1 overflow-y-auto">
+{{-- KONTEN UTAMA --}}
+<div class="relative z-10 pt-10 pb-16 px-4 flex-1 overflow-y-auto">
+
+    {{-- JUDUL --}}
     <div class="text-center">
         <h1 class="text-5xl font-extrabold drop-shadow-lg animate-bounce text-yellow-600">
             Selamat Datang!
         </h1>
         <p class="mt-4 text-lg font-medium text-gray-800">
-            Yuk, belajar sambil bermain dan mengenal dunia!
+            Yuk, belajar sambil bermain dan mengenal dunia 🌈
         </p>
     </div>
 
-    <div class="mt-12 max-w-5xl mx-auto text-2xl font-bold text-gray-900">Pembelajaran</div>
-    {{-- Kategori belajar --}}
-    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    {{-- PILIH JENJANG --}}
+    <div class="mt-16 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-10">
+            Pilih Jenjang Belajar
+        </h2>
 
-        <a href="/paud/huruf"
-            class="bg-yellow-300 hover:bg-yellow-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
-            <img src="{{ asset('assets/img/btn_abcs.png') }}" alt="Huruf" class="mx-auto w-20 mb-3 animate-wiggle">
-            <h2 class="text-2xl font-bold text-gray-900">Belajar Huruf</h2>
-            <p class="mt-2 text-sm text-gray-700">Kenali huruf dari A sampai Z!</p>
-        </a>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
 
-        <a href="/angka"
-            class="bg-blue-300 hover:bg-blue-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
-            <img src="{{ asset('assets/img/btn_numbers.png') }}" alt="Angka"
-                class="mx-auto w-20 mb-3 animate-wiggle">
-            <h2 class="text-2xl font-bold text-gray-900">Belajar Angka</h2>
-            <p class="mt-2 text-sm text-gray-700">Hitung dari 1 sampai 10!</p>
-        </a>
+            {{-- PAUD --}}
+            <a href="/paud"
+               class="bg-green-300 hover:bg-green-400 transition transform hover:-translate-y-2 hover:scale-105 duration-300 rounded-3xl p-10 text-center shadow-[0_15px_25px_rgba(0,0,0,0.25)]">
+                <img src="{{ asset('assets/img/paud.png') }}"
+                     alt="PAUD"
+                     class="mx-auto w-28 mb-6 animate-wiggle">
+                <h3 class="text-3xl font-extrabold text-gray-900">PAUD</h3>
+                <p class="mt-3 text-lg text-gray-700">
+                    Belajar sambil bermain untuk usia dini
+                </p>
+            </a>
 
-        <a href="/warna"
-            class="bg-pink-300 hover:bg-pink-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
-            <img src="{{ asset('assets/img/btn_colors.png') }}" alt="Warna" class="mx-auto w-20 mb-3 animate-wiggle">
-            <h2 class="text-2xl font-bold text-gray-900">Belajar Warna</h2>
-            <p class="mt-2 text-sm text-gray-700">Temukan warna-warna indah di sekitarmu!</p>
-        </a>
+            {{-- TK --}}
+            <a href="/tk"
+               class="bg-purple-300 hover:bg-purple-400 transition transform hover:-translate-y-2 hover:scale-105 duration-300 rounded-3xl p-10 text-center shadow-[0_15px_25px_rgba(0,0,0,0.25)]">
+                <img src="{{ asset('assets/img/tk.png') }}"
+                     alt="TK"
+                     class="mx-auto w-28 mb-6 animate-wiggle">
+                <h3 class="text-3xl font-extrabold text-gray-900">TK</h3>
+                <p class="mt-3 text-lg text-gray-700">
+                    Siap membaca, menulis, dan berhitung
+                </p>
+            </a>
+
+        </div>
     </div>
 
-
-    <div class="mt-12 max-w-5xl mx-auto text-2xl font-bold text-gray-900">Quiz Pembelajaran</div>
-    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-
-        <a href="/paud/huruf/game"
-            class="bg-yellow-300 hover:bg-yellow-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
-            <img src="{{ asset('assets/img/btn_abcs.png') }}" alt="Huruf" class="mx-auto w-20 mb-3 animate-wiggle">
-            <h2 class="text-2xl font-bold text-gray-900">QuizBelajar Huruf</h2>
-            <p class="mt-2 text-sm text-gray-700">Kenali huruf dari A sampai Z!</p>
-        </a>
-
-        <a href="/angka"
-            class="bg-blue-300 hover:bg-blue-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
-            <img src="{{ asset('assets/img/btn_numbers.png') }}" alt="Angka"
-                class="mx-auto w-20 mb-3 animate-wiggle">
-            <h2 class="text-2xl font-bold text-gray-900">Quiz Belajar Angka</h2>
-            <p class="mt-2 text-sm text-gray-700">Hitung dari 1 sampai 10!</p>
-        </a>
-
-        <a href="/warna"
-            class="bg-pink-300 hover:bg-pink-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
-            <img src="{{ asset('assets/img/btn_colors.png') }}" alt="Warna" class="mx-auto w-20 mb-3 animate-wiggle">
-            <h2 class="text-2xl font-bold text-gray-900">Quiz Belajar Warna</h2>
-            <p class="mt-2 text-sm text-gray-700">Temukan warna-warna indah di sekitarmu!</p>
-        </a>
-    </div>
 </div>
 
-{{-- Footer --}}
+{{-- FOOTER --}}
 <footer class="text-center py-6 text-sm text-gray-700">
     © 2025 Belajar Ceria
 </footer>
 
-{{-- Animasi tambahan --}}
+{{-- ANIMASI --}}
 <style>
     @keyframes wiggle {
-
-        0%,
-        100% {
-            transform: rotate(-3deg);
-        }
-
-        50% {
-            transform: rotate(3deg);
-        }
+        0%, 100% { transform: rotate(-3deg); }
+        50% { transform: rotate(3deg); }
     }
-
     .animate-wiggle {
         animation: wiggle 1.5s ease-in-out infinite;
     }
 </style>
-</body>
 
+</body>
 </html>

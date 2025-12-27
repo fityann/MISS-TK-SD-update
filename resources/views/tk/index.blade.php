@@ -1,5 +1,5 @@
 {{-- NAVIGASI --}}
-@include('layouts.navbar')
+@include('layouts.navbar1')
 
 {{-- Konten utama --}}
 <div class="relative z-10 pt-10 pb-10 px-4 flex-1 overflow-y-auto">
