@@ -14,7 +14,7 @@
   <!-- 🌈 Navbar -->
   <nav class="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md shadow-md z-50" x-data="{ open: false }">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
-      
+
       <!-- Logo -->
       <h1 class="text-xl md:text-2xl font-extrabold text-yellow-600">
         🌟 Belajar Ceria 🌟
@@ -40,8 +40,8 @@
                 </form>
             </li>
         @else
-            <li><a href="/login" class="hover:text-yellow-500 transition">Login</a></li>
-            <li><a href="/register" class="hover:text-yellow-500 transition">Register</a></li>
+            {{-- <li><a href="/login" class="hover:text-yellow-500 transition">Login</a></li> --}}
+            {{-- <li><a href="/register" class="hover:text-yellow-500 transition">Register</a></li> --}}
         @endauth
       </ul>
     </div>
@@ -63,8 +63,8 @@
               <button class="block w-full py-2 font-semibold hover:text-red-500">Logout</button>
           </form>
       @else
-          <a href="/login" class="block py-2 font-semibold hover:text-yellow-500">Login</a>
-          <a href="/register" class="block py-2 font-semibold hover:text-yellow-500">Register</a>
+          {{-- <a href="/login" class="block py-2 font-semibold hover:text-yellow-500">Login</a> --}}
+          {{-- <a href="/register" class="block py-2 font-semibold hover:text-yellow-500">Register</a> --}}
       @endauth
     </div>
   </nav>
