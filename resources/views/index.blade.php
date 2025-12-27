@@ -38,7 +38,7 @@
                 <img src="{{ asset('assets/img/paud.png') }}"
                      alt="PAUD"
                      class="mx-auto w-28 mb-6 animate-wiggle">
-                <h3 class="text-3xl font-extrabold text-gray-900">PAUD</h3>
+                <h3 class="text-3xl font-extrabold text-gray-900">PAUD Ajah</h3>
                 <p class="mt-3 text-lg text-gray-700">
                     Belajar sambil bermain untuk usia dini
                 </p>
