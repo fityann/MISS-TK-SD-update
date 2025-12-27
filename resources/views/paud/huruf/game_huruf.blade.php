@@ -23,7 +23,7 @@
   <div class="flex flex-col items-center w-full px-4 sm:px-6 pt-28 pb-16">
 
     <!-- Tombol Kembali (Lebih Rapi & Deket Card) -->
-    <a href="/huruf"
+    <a href="/paud/huruf"
        class="self-start mb-6 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold
               px-5 py-2 rounded-full shadow-md flex items-center gap-2 transition transform hover:scale-105">
       ⬅️ Kembali
@@ -43,10 +43,10 @@
 
       <!-- INPUT NAMA -->
       <div id="nameInput" class="space-y-4">
-        <input id="playerName" 
+        <input id="playerName"
                type="text"
                placeholder="Masukkan namamu..."
-               class="border-2 border-pink-300 rounded-xl p-3 w-full text-center text-lg 
+               class="border-2 border-pink-300 rounded-xl p-3 w-full text-center text-lg
                       focus:outline-none focus:ring-2 focus:ring-pink-400 shadow-sm" />
 
         <button onclick="startQuizSetup()"
@@ -62,7 +62,7 @@
         <p id="questionNumber" class="text-sm text-gray-500 mb-6"></p>
 
         <button onclick="playQuestion()"
-                class="bg-pink-500 hover:bg-pink-600 text-white text-base font-bold px-6 py-3 
+                class="bg-pink-500 hover:bg-pink-600 text-white text-base font-bold px-6 py-3
                        rounded-full shadow-md mb-5 transition transform hover:scale-105">
           🔊 Putar Pertanyaan
         </button>
@@ -138,9 +138,9 @@
       }
 
       const correctLetter = questions[currentQuestion];
-      document.getElementById('questionNumber').textContent = 
+      document.getElementById('questionNumber').textContent =
         `Soal ${currentQuestion + 1} dari ${questions.length}`;
-      
+
       const choices = shuffle([correctLetter, ...getRandomLetters(2, correctLetter)]);
       const container = document.getElementById('choices');
       container.innerHTML = '';
@@ -190,7 +190,7 @@
       document.getElementById('quizArea').classList.add('hidden');
       document.getElementById('result').classList.remove('hidden');
 
-      document.getElementById('scoreDisplay').textContent = 
+      document.getElementById('scoreDisplay').textContent =
         `${playerName}, skormu: ${score} dari ${questions.length}`;
 
       // SIMPAN KE DATABASE

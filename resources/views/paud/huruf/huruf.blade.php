@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body 
+<body
     style="background-image: url('{{ asset('assets/img/bg.png') }}');"
     class="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center text-black relative overflow-x-hidden"
 >
@@ -16,11 +16,11 @@
     @include('layouts.navbar')
 
     {{-- Top Navigation Button --}}
-    <div class="w-full flex justify-between items-center px-6A">
+    <div class="w-full px-6">
 
         {{-- Tombol Kembali --}}
         <a href="/"
-           class="bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md flex items-center gap-2 transition-transform hover:scale-105">
+           class="bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md transition-transform hover:scale-105">
             ⬅️ Kembali
         </a>
 
@@ -30,10 +30,7 @@
         </h1>
 
         {{-- Tombol ke Kuis --}}
-        <a href="/kuis_huruf"
-           class="bg-purple-500 hover:bg-purple-600 text-white font-bold px-5 py-2 rounded-full shadow-md flex items-center gap-2 transition-transform hover:scale-105">
-            🎯 Kuis Huruf
-        </a>
+
     </div>
 
     {{-- Grid Huruf --}}
