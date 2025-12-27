@@ -50,7 +50,7 @@
                     <img src="{{ asset('assets/img/tk.png') }}" alt="TK" class="mx-auto w-28 mb-6 animate-wiggle">
                     <h3 class="text-3xl font-extrabold text-gray-900">TK</h3>
                     <p class="mt-3 text-lg text-gray-700">
-                        Siap membaca, menulis, dan berhitung
+                        Siap membaca, menulis, dan berhitung ajah
                     </p>
                 </a>
 
