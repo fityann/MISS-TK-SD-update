@@ -11,7 +11,7 @@
             Selamat Datang!
         </h1>
         <p class="mt-4 text-lg font-medium text-gray-800">
-            Yuk, belajar sambil bermain dan mengenal dunia 🌈
+            Yuk, belajar sambil bermain dan mengenal dunia lebih luas 🌈
         </p>
     </div>
 
