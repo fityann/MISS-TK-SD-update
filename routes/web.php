@@ -44,3 +44,13 @@ Route::get('/paud/warna', function () {
 Route::get('/paud/warna/game', function () {
     return view('paud.warna.game_warna');
 });
+
+Route::get('/tk', function () {
+    return view('tk.index');
+});
+
+Route::get('/paud', function () {
+    return view('paud.index');
+});
+
+
