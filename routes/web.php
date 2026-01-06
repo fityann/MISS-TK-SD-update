@@ -74,28 +74,7 @@ Route::get('/tk/matematika/materimtk', function () {
 
 
 
-// GAME
-Route::get('/tk/matematika/tambah/game', function () {
-    return view('tk.matematika.tambah.game_tambah');
+Route::get('/tk/membaca', function () {
+    return view('tk.membaca.index');
 });
 
-Route::get('/tk/matematika/kali/game', function () {
-    return view('tk.matematika.kali.game_kali');
-});
-
-Route::get('/tk/matematika/kurang/game', function () {
-    return view('tk.matematika.kurang.game_kurang');
-});
-
-// MATERI
-Route::get('/tk/matematika/tambah/materi', function () {
-    return view('tk.matematika.tambah.materi_tambah');
-});
-
-Route::get('/tk/matematika/kali/materi', function () {
-    return view('tk.matematika.kali.materi_kali');
-});
-
-Route::get('/tk/matematika/kurang/materi', function () {
-    return view('tk.matematika.kurang.materi_kurang');
-});
