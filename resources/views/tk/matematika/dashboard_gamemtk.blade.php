@@ -35,7 +35,7 @@
         <div class="relative mb-10">
             <div class="bg-white border-[6px] border-yellow-400 rounded-full px-10 py-2 shadow-lg relative z-10">
                 <h1 class="text-2xl md:text-3xl font-black text-orange-600 uppercase tracking-tight">
-                    PILIH MATERI SERU! ✏️
+                    PILIH GAME SERU! ✏️
                 </h1>
             </div>
             <div class="absolute -right-4 -top-2 text-4xl transform rotate-12"></div>
