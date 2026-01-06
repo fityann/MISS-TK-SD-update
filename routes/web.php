@@ -53,4 +53,49 @@ Route::get('/paud', function () {
     return view('paud.index');
 });
 
+// MATEMATIKA PAUD
+Route::get('/tk/matematika/mtk', function () {
+    return view('tk.matematika.dashboard_materimtk');
+});
 
+Route::get('/tk/matematika/pilih', function () {
+    return view('tk.matematika.pilih');
+});
+
+Route::get('/tk/matematika/gamemtk', function () {
+    return view('tk.matematika.dashboard_gamemtk');
+});
+
+Route::get('/tk/matematika/materimtk', function () {
+    return view('tk.matematika.dashboard_materimtk');
+});
+
+
+
+
+
+// GAME
+Route::get('/tk/matematika/tambah/game', function () {
+    return view('tk.matematika.tambah.game_tambah');
+});
+
+Route::get('/tk/matematika/kali/game', function () {
+    return view('tk.matematika.kali.game_kali');
+});
+
+Route::get('/tk/matematika/kurang/game', function () {
+    return view('tk.matematika.kurang.game_kurang');
+});
+
+// MATERI
+Route::get('/tk/matematika/tambah/materi', function () {
+    return view('tk.matematika.tambah.materi_tambah');
+});
+
+Route::get('/tk/matematika/kali/materi', function () {
+    return view('tk.matematika.kali.materi_kali');
+});
+
+Route::get('/tk/matematika/kurang/materi', function () {
+    return view('tk.matematika.kurang.materi_kurang');
+});
