@@ -68,7 +68,7 @@
       </div>
     @endforeach
   </div>
-
+  
   <!-- Audio player -->
   <audio id="audioPlayer"></audio>
 

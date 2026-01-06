@@ -53,6 +53,26 @@ Route::get('/paud', function () {
     return view('paud.index');
 });
 
+// MATEMATIKA PAUD
+Route::get('/tk/matematika/mtk', function () {
+    return view('tk.matematika.dashboard_materimtk');
+});
+
+Route::get('/tk/matematika/pilih', function () {
+    return view('tk.matematika.pilih');
+});
+
+Route::get('/tk/matematika/gamemtk', function () {
+    return view('tk.matematika.dashboard_gamemtk');
+});
+
+Route::get('/tk/matematika/materimtk', function () {
+    return view('tk.matematika.dashboard_materimtk');
+});
+
+
+
+
 
 Route::get('/tk/membaca', function () {
     return view('tk.membaca.index');
