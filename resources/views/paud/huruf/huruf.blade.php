@@ -19,7 +19,7 @@
     <div class="w-full px-6">
 
         {{-- Tombol Kembali --}}
-        <a href="/"
+        <a href="/paud"
            class="bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md transition-transform hover:scale-105">
             ⬅️ Kembali
         </a>

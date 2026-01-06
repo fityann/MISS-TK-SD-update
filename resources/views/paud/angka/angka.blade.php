@@ -7,7 +7,7 @@
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body style="background-image: url('{{ asset('assets/img/bg.png') }}');" 
+<body style="background-image: url('{{ asset('assets/img/bg.png') }}');"
       class="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center text-black relative overflow-x-hidden">
 
   {{-- Navigasi --}}
@@ -15,15 +15,15 @@
 
  {{-- Tombol Navigasi Atas --}}
 <div class="w-full flex justify-between items-center px-6 pt-24">
-  
+
   <!-- Tombol Kembali -->
-  <a href="/" 
+  <a href="/tk"
      class="bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md flex items-center gap-2 transition-transform hover:scale-105">
     ⬅️ Kembali
   </a>
 
   <!-- Tombol ke Kuis -->
-  <a href="/kuis_angka" 
+  <a href="/kuis_angka"
      class="bg-purple-500 hover:bg-purple-600 text-white font-bold px-5 py-2 rounded-full shadow-md flex items-center gap-2 transition-transform hover:scale-105">
     🎯 Kuis Angka
   </a>
@@ -37,7 +37,7 @@
   {{-- Grid Angka --}}
   <div class="grid grid-cols-3 sm:grid-cols-5 gap-6 px-6 mb-12">
     @foreach(range(1, 10) as $angka)
-      <div 
+      <div
         class="bg-white border-4 border-blue-400 rounded-3xl shadow-lg hover:scale-110 hover:rotate-2 transition-transform cursor-pointer flex flex-col items-center justify-center w-24 h-24"
         onclick="playNumber('{{ $angka }}')">
 
