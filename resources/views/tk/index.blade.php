@@ -38,6 +38,34 @@
         </a>
     </div>
 
+
+    <div class="mt-12 max-w-5xl mx-auto text-2xl font-bold text-gray-900">Quiz Pembelajaran</div>
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+        <a href="/tk/membaca"
+            class="bg-yellow-300 hover:bg-yellow-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
+            <img src="{{ asset('assets/img/btn_abcs.png') }}" alt="Huruf" class="mx-auto w-20 mb-3 animate-wiggle">
+            <h2 class="text-2xl font-bold text-gray-900">Quiz Belajar Membaca</h2>
+            <p class="mt-2 text-sm text-gray-700">Bisa membaca itu penting Ya Deckk!!</p>
+        </a>
+
+        <a href="/angka"
+            class="bg-blue-300 hover:bg-blue-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
+            <img src="{{ asset('assets/img/btn_numbers.png') }}" alt="Angka"
+                class="mx-auto w-20 mb-3 animate-wiggle">
+            <h2 class="text-2xl font-bold text-gray-900">Quiz Belajar Angka</h2>
+            <p class="mt-2 text-sm text-gray-700">Hitung dari 1 sampai 10!</p>
+        </a>
+
+        <a href="/warna"
+            class="bg-pink-300 hover:bg-pink-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
+            <img src="{{ asset('assets/img/btn_colors.png') }}" alt="Warna" class="mx-auto w-20 mb-3 animate-wiggle">
+            <h2 class="text-2xl font-bold text-gray-900">Quiz Belajar Warna</h2>
+            <p class="mt-2 text-sm text-gray-700">Temukan warna-warna indah di sekitarmu!</p>
+        </a>
+    </div>
+</div>
+
 {{-- Footer --}}
 <footer class="text-center py-6 text-sm text-gray-700">
     © 2025 Belajar Ceria
