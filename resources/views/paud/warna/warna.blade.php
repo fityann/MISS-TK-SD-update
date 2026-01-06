@@ -7,7 +7,7 @@
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body style="background-image: url('{{ asset('assets/img/bg.png') }}');" 
+<body style="background-image: url('{{ asset('assets/img/bg.png') }}');"
       class="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center text-black relative overflow-hidden">
 
        {{-- Navigasi --}}
@@ -15,15 +15,15 @@
 
  {{-- Tombol Navigasi Atas --}}
 <div class="w-full flex justify-between items-center px-6 pt-24">
-  
+
   <!-- Tombol Kembali -->
-  <a href="/" 
+  <a href="/paud"
      class="bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md flex items-center gap-2 transition-transform hover:scale-105">
     ⬅️ Kembali
   </a>
 
   <!-- Tombol ke Kuis -->
-  <a href="/kuis_huruf" 
+  <a href="/kuis_huruf"
      class="bg-purple-500 hover:bg-purple-600 text-white font-bold px-5 py-2 rounded-full shadow-md flex items-center gap-2 transition-transform hover:scale-105">
     🎯 Kuis Warna
   </a>
@@ -53,7 +53,7 @@
     @endphp
 
     @foreach($colors as $color)
-      <div 
+      <div
         class="relative rounded-3xl shadow-lg border-4 border-white hover:scale-110 transition-transform cursor-pointer flex flex-col items-center justify-center w-28 h-28"
         style="background-color: {{ $color['hex'] }};"
         onclick="playColor('{{ strtolower(str_replace(' ', '_', $color['name'])) }}')">
@@ -68,7 +68,7 @@
       </div>
     @endforeach
   </div>
-  
+
   <!-- Audio player -->
   <audio id="audioPlayer"></audio>
 
