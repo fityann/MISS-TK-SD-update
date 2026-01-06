@@ -54,3 +54,7 @@ Route::get('/paud', function () {
 });
 
 
+Route::get('/tk/membaca', function () {
+    return view('tk.membaca.index');
+});
+
