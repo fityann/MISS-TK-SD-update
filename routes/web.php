@@ -97,10 +97,6 @@ Route::get('/tk/matematika/kurang/game', function () {
 });
 
 
-
-
-
-
 Route::get('/tk/membaca', function () {
     return view('tk.membaca.index');
 });
