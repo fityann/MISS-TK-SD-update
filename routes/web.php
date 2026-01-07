@@ -101,3 +101,13 @@ Route::get('/tk/membaca', function () {
     return view('tk.membaca.index');
 });
 
+Route::get('/tk/module', function () {
+    return view('tk.membaca.module');
+});
+Route::get('/tk/membaca/huruf', function () {
+    return view('tk.membaca.huruf');
+});
+
+
+
+

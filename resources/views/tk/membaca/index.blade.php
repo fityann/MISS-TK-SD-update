@@ -1,4 +1,4 @@
-@include('layouts.navbar1')
+@include('layouts.navbar')
 <div class="flex justify-center">
 <body class="bg-blue-100 min-h-screen flex items-center justify-center">
 
