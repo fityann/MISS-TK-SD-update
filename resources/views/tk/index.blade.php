@@ -1,8 +1,16 @@
 {{-- NAVIGASI --}}
 @include('layouts.navbar')
 
+<div class="w-full max-w-5xl mb-6">
+    <a href="/"
+        class="inline-block ml-5 bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md transition-transform hover:scale-105">
+        ⬅️ Kembali
+    </a>
+</div>
+
+
 {{-- Konten utama --}}
-<div class="relative z-10 pt-10 pb-10 px-4 flex-1 overflow-y-auto">
+<div class="relative z-10 pt-5 pb-10 px-4 flex-1 overflow-y-auto">
     <div class="text-center">
         <h1 class="text-5xl font-extrabold drop-shadow-lg animate-bounce text-yellow-600">
             Selamat Datang!
