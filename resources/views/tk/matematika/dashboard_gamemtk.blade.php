@@ -30,12 +30,19 @@
 
     @include('layouts.navbar')
 
+    <div class="w-full max-w-5xl mb-6">
+        <a href="/tk/matematika/pilih"
+            class="inline-block ml-5 bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md transition-transform hover:scale-105">
+            ⬅️ Kembali
+        </a>
+    </div>
+
     <div class="flex-grow flex flex-col items-center justify-center px-4">
 
         <div class="relative mb-10">
             <div class="bg-white border-[6px] border-yellow-400 rounded-full px-10 py-2 shadow-lg relative z-10">
                 <h1 class="text-2xl md:text-3xl font-black text-orange-600 uppercase tracking-tight">
-                    PILIH MATERI SERU! ✏️
+                    PILIH GAME SERU! ✏️
                 </h1>
             </div>
             <div class="absolute -right-4 -top-2 text-4xl transform rotate-12"></div>

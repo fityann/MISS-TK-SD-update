@@ -11,10 +11,13 @@
             background-image: url('{{ asset('assets/img/kindergarten backgro.png') }}');
             background-size: cover; background-position: center;
         }
-        .paper-texture {
-            background-color: #FFF9E3;
-            background-image: radial-gradient(#D28E43 0.5px, transparent 0.5px);
-            background-size: 20px 20px;
+        /* Style untuk slider statis */
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide-page {
+            min-width: 100%;
         }
     </style>
 </head>
@@ -30,35 +33,58 @@
                 PENJUMLAHAN
             </div>
 
-            <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform hidden md:block">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button onclick="moveSlide(-1)" class="absolute -left-6 top-1/2 -translate-y-1/2 bg-orange-500 text-white p-3 rounded-full shadow-lg z-30 hidden md:block border-4 border-white">                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
 
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mt-8">
-                @php
-                    $colors = ['bg-pink-100 border-pink-300', 'bg-blue-100 border-blue-300', 'bg-green-100 border-green-300', 'bg-yellow-100 border-yellow-300', 'bg-purple-100 border-purple-300'];
-                    $textColors = ['text-pink-600', 'text-blue-600', 'text-green-600', 'text-yellow-600', 'text-purple-600'];
-                @endphp
-
-                @for ($i = 1; $i <= 5; $i++)
-                <div class="{{ $colors[$i-1] }} border-2 rounded-2xl p-3 shadow-sm">
-                    <h4 class="text-center font-black text-lg mb-2 {{ $textColors[$i-1] }}">Tabel {{ $i }}</h4>
-                    <div class="space-y-1 text-sm md:text-base font-bold text-gray-700">
-                        @for ($j = 1; $j <= 10; $j++)
-                        <div class="flex justify-between border-b border-white/50 px-1">
-                            <span>{{ $i }} + {{ $j }}</span>
-                            <span class="text-black">= {{ $i + $j }}</span>
+            <div class="overflow-hidden mt-8">
+                <div id="mainSlider" class="slider-wrapper">
+                    
+                    <div class="slide-page grid grid-cols-2 md:grid-cols-5 gap-3">
+                        @php
+                            $colors = ['bg-pink-100 border-pink-300', 'bg-blue-100 border-blue-300', 'bg-green-100 border-green-300', 'bg-yellow-100 border-yellow-300', 'bg-purple-100 border-purple-300'];
+                            $textColors = ['text-pink-600', 'text-blue-600', 'text-green-600', 'text-yellow-600', 'text-purple-600'];
+                        @endphp
+                        @for ($i = 1; $i <= 5; $i++)
+                        <div class="{{ $colors[$i-1] }} border-2 rounded-2xl p-3 shadow-sm">
+                            <h4 class="text-center font-black text-lg mb-2 {{ $textColors[$i-1] }}">Tabel {{ $i }}</h4>
+                            <div class="space-y-1 text-sm md:text-base font-bold text-gray-700">
+                                @for ($j = 1; $j <= 10; $j++)
+                                <div class="flex justify-between border-b border-white/50 px-1">
+                                    <span>{{ $i }} + {{ $j }}</span>
+                                    <span class="text-black">= {{ $i + $j }}</span>
+                                </div>
+                                @endfor
+                            </div>
                         </div>
                         @endfor
                     </div>
+
+                    <div class="slide-page grid grid-cols-2 md:grid-cols-5 gap-3">
+                        @php
+                            $colors2 = ['bg-orange-100 border-orange-300', 'bg-cyan-100 border-cyan-300', 'bg-emerald-100 border-emerald-300', 'bg-indigo-100 border-indigo-300', 'bg-rose-100 border-rose-300'];
+                            $textColors2 = ['text-orange-600', 'text-cyan-600', 'text-emerald-600', 'text-indigo-600', 'text-rose-600'];
+                        @endphp
+                        @for ($i = 6; $i <= 10; $i++)
+                        <div class="{{ $colors2[$i-6] }} border-2 rounded-2xl p-3 shadow-sm">
+                            <h4 class="text-center font-black text-lg mb-2 {{ $textColors2[$i-6] }}">Tabel {{ $i }}</h4>
+                            <div class="space-y-1 text-sm md:text-base font-bold text-gray-700">
+                                @for ($j = 1; $j <= 10; $j++)
+                                <div class="flex justify-between border-b border-white/50 px-1">
+                                    <span>{{ $i }} + {{ $j }}</span>
+                                    <span class="text-black">= {{ $i + $j }}</span>
+                                </div>
+                                @endfor
+                            </div>
+                        </div>
+                        @endfor
+                    </div>
+
                 </div>
-                @endfor
             </div>
 
-            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform hidden md:block">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button onclick="moveSlide(1)" class="absolute -right-6 top-1/2 -translate-y-1/2 bg-orange-500 text-white p-3 rounded-full shadow-lg z-30 hidden md:block border-4 border-white">                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
@@ -71,6 +97,20 @@
 
         </div>
     </div>
+
+    <script>
+        let currentSlide = 0;
+        function moveSlide(direction) {
+            const slider = document.getElementById('mainSlider');
+            currentSlide += direction;
+            
+            // Batasi biar cuma halaman 0 dan 1
+            if (currentSlide < 0) currentSlide = 0;
+            if (currentSlide > 1) currentSlide = 1;
+
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
 
 </body>
 </html>
