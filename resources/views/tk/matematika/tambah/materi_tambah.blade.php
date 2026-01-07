@@ -26,9 +26,9 @@
     @include('layouts.navbar')
 
     <div class="flex-grow flex items-center justify-center px-4 pt-24 pb-12">
-        
+
         <div class="relative w-full max-w-5xl bg-[#FFF9E3] rounded-[40px] border-[10px] border-[#D28E43] shadow-2xl p-4 md:p-8">
-            
+
             <div class="absolute -top-7 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-12 py-3 rounded-2xl shadow-lg font-black text-2xl uppercase tracking-widest z-20">
                 PENJUMLAHAN
             </div>
