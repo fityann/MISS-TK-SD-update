@@ -23,9 +23,9 @@
     @include('layouts.navbar')
 
     <div class="flex-grow flex items-center justify-center px-4 pt-24 pb-12">
-        
+
         <div class="relative w-full max-w-5xl bg-[#FFF9E3] rounded-[40px] border-[10px] border-[#D28E43] shadow-2xl p-4 md:p-8">
-            
+
             <div class="absolute -top-7 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-12 py-3 rounded-2xl shadow-lg font-black text-2xl uppercase tracking-widest z-20">
                 PENJUMLAHAN
             </div>
@@ -64,7 +64,7 @@
             </button>
 
             <div class="mt-8 flex justify-center">
-                <a href="" class="bg-blue-500 hover:bg-blue-600 text-white font-black px-10 py-3 rounded-2xl shadow-[0_5px_0_0_#1e40af] active:translate-y-1 active:shadow-none uppercase">
+                <a href="/tk/matematika/materimtk" class="bg-blue-500 hover:bg-blue-600 text-white font-black px-10 py-3 rounded-2xl shadow-[0_5px_0_0_#1e40af] active:translate-y-1 active:shadow-none uppercase">
                     Selesai Belajar 🏠
                 </a>
             </div>

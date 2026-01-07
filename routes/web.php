@@ -70,9 +70,14 @@ Route::get('/tk/matematika/materimtk', function () {
     return view('tk.matematika.dashboard_materimtk');
 });
 
+//hitung materi
+Route::get('/tk/matematika/materitambah', function () {
+    return view('tk.matematika.tambah.materi_tambah');
+});
 
-
-
+Route::get('/tk/matematika/gametambah', function () {
+    return view('tk.matematika.tambah.game_tambah');
+});
 
 Route::get('/tk/membaca', function () {
     return view('tk.membaca.index');

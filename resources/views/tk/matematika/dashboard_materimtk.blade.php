@@ -31,7 +31,7 @@
     @include('layouts.navbar')
 
     <div class="flex-grow flex flex-col items-center justify-center px-4">
-        
+
         <div class="relative mb-10">
             <div class="bg-white border-[6px] border-yellow-400 rounded-full px-10 py-2 shadow-lg relative z-10">
                 <h1 class="text-2xl md:text-3xl font-black text-orange-600 uppercase tracking-tight">
@@ -42,8 +42,8 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl w-full">
-            
-            <a href="/tk/matematika/tambah/materi" class="btn-pop group">
+
+            <a href="/tk/matematika/materitambah" class="btn-pop group">
                 <div class="flex flex-col items-center">
                     <img src="https://cdn-icons-png.flaticon.com/512/4207/4207253.png" class="w-16 h-16 z-20 floating mb-[-10px]" alt="Ayam">
                     <div class="bg-[#E91E63] w-full aspect-square max-w-[160px] rounded-[30px] border-[6px] border-white shadow-xl flex items-center justify-center text-white text-6xl font-black shadow-[0_8px_0_0_#ad1457] group-hover:brightness-110 transition-all">
