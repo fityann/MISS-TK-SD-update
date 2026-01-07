@@ -23,7 +23,7 @@
     {{-- Kategori belajar --}}
     <div class="mt-18 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
 
-        <a href="/paud/huruf"
+        <a href="/tk/module"
             class="bg-yellow-300 hover:bg-yellow-400 transition transform hover:-translate-y-2 hover:rotate-1 duration-300 rounded-2xl p-6 text-center shadow-[0_10px_15px_rgba(0,0,0,0.2)]">
             <img src="{{ asset('assets/img/btn_abcs.png') }}" alt="Huruf" class="mx-auto w-20 mb-3 animate-wiggle">
             <h2 class="text-2xl font-bold text-gray-900">Bahasa</h2>
