@@ -35,6 +35,14 @@
 
 <body class="bg-game min-h-screen flex flex-col font-sans overflow-hidden">
     @include('layouts.navbar')
+
+    <div class="w-full max-w-5xl mb-6">
+        <a href="/tk"
+            class="inline-block ml-5 bg-green-400 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-full shadow-md transition-transform hover:scale-105">
+            ⬅️ Kembali
+        </a>
+    </div>
+
     <div class="flex-grow flex flex-col items-center justify-center px-6">
         <div class="flex flex-col sm:flex-row gap-6 md:gap-10 items-center justify-center w-full max-w-4xl">
             <a href="/tk/matematika/materimtk" class="btn-bouncy group relative w-full sm:w-auto">

@@ -90,7 +90,7 @@
             </button>
 
             <div class="mt-8 flex justify-center">
-                <a href="" class="bg-blue-500 hover:bg-blue-600 text-white font-black px-10 py-3 rounded-2xl shadow-[0_5px_0_0_#1e40af] active:translate-y-1 active:shadow-none uppercase">
+                <a href="/tk/matematika/materimtk" class="bg-blue-500 hover:bg-blue-600 text-white font-black px-10 py-3 rounded-2xl shadow-[0_5px_0_0_#1e40af] active:translate-y-1 active:shadow-none uppercase">
                     Selesai Belajar 🏠
                 </a>
             </div>
